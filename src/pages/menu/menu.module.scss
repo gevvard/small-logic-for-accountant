@@ -1,0 +1,17 @@
+.menuItemContainer{
+  display: flex;
+  gap: 40px;
+
+  li{
+    list-style: none;
+    a{
+      text-decoration: none;
+    }
+    &.active > a {
+      color: #cbc6c6;
+    }
+  }
+  //.active{
+  //  color: yellow;
+  //}
+}

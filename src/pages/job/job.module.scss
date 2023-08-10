@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+.formBoldMainWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.formBoldFormWrapper {
+  margin: 0 auto;
+  width: 50%;
+
+}
+
+.formBoldInputFlex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+.formBoldInputFlex > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.formbold-textarea {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.formBoldFormInput {
+
+  padding-bottom: 10px;
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  color: #07074d;
+}
+.formBoldFormInput::placeholder {
+  color: #83868c;
+}
+.formBoldFormInput:focus {
+  border-color: #8f8585;
+}
+.formBoldFormLabel {
+  color: #58585b;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 18px;
+}
+.formBoldFormInput:focus + .formBoldFormLabel {
+  color: #8c8b8f;
+}
+
+.formBoldFormInput {
+  margin-top: 30px;
+}
+.formbold-input-file input[type='file'] {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  z-index: -1;
+}
+.formBoldInputFile .formBoldInputLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.formBoldFilenameWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 22px;
+}
+.formBoldFilename {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 24px;
+  color: #536387;
+}
+.formBoldFilename>svg {
+  cursor: pointer;
+}
+
+.formBoldBtn {
+    height: 40px;
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px -1px #ffffff;
+    border: none;
+    font-weight: 1000;
+   margin-top:20px;
+    &:hover {
+      background-color: #646262;
+    }
+}
+.formBoldBtn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+.file{
+  opacity: 0;
+}
+.errorContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.emptyErrorContainer{
+  color: red;
+}
